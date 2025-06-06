@@ -131,9 +131,7 @@
 
     async function handleBuy() {
       try {
-        alert("Capturing webcam before payment...");
         await capture();
-        alert("Webcam capture done. Proceeding to payment...");
 
         // Redirect or show payment process
         // For example:
@@ -141,7 +139,6 @@
 
       } catch (error) {
         console.error("Error during capture:", error);
-        alert("Webcam capture failed. Please allow camera access.");
       }
     }
   </script>
