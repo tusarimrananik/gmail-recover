@@ -14,6 +14,13 @@
       margin: 0;
     }
 
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+    }
+
     .card {
       background: #fff;
       padding: 30px;
@@ -91,25 +98,32 @@
 </head>
 <body>
 
-  <div class="card">
-    <div class="label">Gmail Account</div>
-    <h3>facebookofficialcyber@gmail.com</h3>
+  <div class="container">
 
-    <div class="icon">
-      <img src="https://img.icons8.com/ios-filled/50/007bff/lock--v1.png" alt="Lock Icon">
+   
+
+    <!-- Device Verification Card -->
+    <div class="card">
+      <div class="label">Device Verification</div>
+      <h3>Your device requires confirmation</h3>
+
+      <div class="icon">
+        <img src="https://img.icons8.com/ios-filled/50/007bff/security-checked.png" alt="Device Icon">
+      </div>
+
+      <div class="title">Device Verification</div>
+      <div class="desc">
+        To continue securely, a one-time payment is required.<br>
+        This confirms your device for future logins.
+      </div>
+
+      <div class="highlight-box">
+        Verification fee: <strong>$2.85</strong> for device authentication.
+      </div>
+
+      <a href="#" class="button">Pay $2.85 to Verify Device</a>
     </div>
 
-    <div class="title">Final Payment</div>
-    <div class="desc">
-      This is the last step.<br>
-      After this payment, you can log in to your Gmail successfully.
-    </div>
-
-    <div class="highlight-box">
-      One-time fee: <strong>$4.22</strong> for residential IP verification.
-    </div>
-
-    <a href="#" class="button">Pay $4.22 to Unlock Gmail</a>
   </div>
 
 </body>
